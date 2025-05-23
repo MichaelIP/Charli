@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>McpNetwork.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+		<Authors>Michael Parenti</Authors>
+		<Company>MCP-Network</Company>
+		<AssemblyVersion>4.0.0</AssemblyVersion>
+		<FileVersion>4.0.0</FileVersion>
+	</PropertyGroup>
+
+</Project>
