@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharliServices", "CharliServices\CharliServices.csproj", "{D0A27CE3-FC07-4AFE-AA58-A622EB08CDEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Charli.Environment", "Charli.Environment\Charli.Environment.csproj", "{7928AF48-8FF5-4AF8-897E-009AF2492445}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0A27CE3-FC07-4AFE-AA58-A622EB08CDEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0A27CE3-FC07-4AFE-AA58-A622EB08CDEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0A27CE3-FC07-4AFE-AA58-A622EB08CDEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0A27CE3-FC07-4AFE-AA58-A622EB08CDEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7928AF48-8FF5-4AF8-897E-009AF2492445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7928AF48-8FF5-4AF8-897E-009AF2492445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7928AF48-8FF5-4AF8-897E-009AF2492445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7928AF48-8FF5-4AF8-897E-009AF2492445}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41452FF3-B370-45B8-B498-23EF24A495D3}
+	EndGlobalSection
+EndGlobal

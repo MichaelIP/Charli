@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>McpNetwork.Charli.Server</RootNamespace>
+		<Authors>Michael Parenti</Authors>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="McpNetwork.WinNuxService" Version="8.1.0" />
+	  <PackageReference Include="System.Text.Json" Version="8.0.5" />
+	</ItemGroup>
+
+</Project>
