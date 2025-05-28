@@ -36,7 +36,7 @@
 	</settingGroup>
 
 	<settingGroup name="PushNotificationsManager">
-		<setting name="PushNotifications.GCM_Api_Key" data-type="string">AIzaSyCcKHmpsX51thfAKgooIypKA7YyDFWURKM</setting>
+		<setting name="PushNotifications.GCM_Api_Key" data-type="string">###</setting>
 		<setting name="PushNotifications.GCM_Sender_Id" data-type="string">500159943913</setting>
 		<setting name="PushNotifications.APNS_Certificate_ThumPrint" data-type="string">6256AF82F3DE4D1EC32AE69537F65404E175C67B</setting>
 		<setting name="PushNotificiations.APNS_Certificate_Password" data-type="string">YMy7cUsg</setting>
@@ -63,7 +63,7 @@
 	</settingGroup>
 
 	<settingGroup name="VoiceManager">
-		<setting name="PicoVoice.AccessKey" data-type="string">/DtMyhXRlnWKVfPN3ALokXh9LbwLkPDmR/jJ3TGA0jEmqpx5/XApcg==</setting>
+		<setting name="PicoVoice.AccessKey" data-type="string">###</setting>
 		<setting name="VoiceGender" data-type="string">female</setting>
 	</settingGroup>
 
