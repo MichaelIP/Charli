@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace McpNetwork.Charli.Server.Helpers
 {
-    public static class EnumHelper
+    internal static class EnumHelper
     {
         public static Type GetManagerImplementedType(this Enum value)
         {

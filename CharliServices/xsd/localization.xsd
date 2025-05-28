@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema 
+    targetNamespace="http://www.charli.xyz/xsd/localization.xsd"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified"
+    xmlns="http://www.charli.xyz/xsd/localization.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+  <xs:element name="localizations" type="urn:localizationsType" xmlns:urn="http://www.charli.xyz/xsd/localization.xsd" />
+
+  <xs:complexType name="localizationsType">
+    <xs:sequence>
+      <xs:element type="urn:groupType" name="group" maxOccurs="unbounded" minOccurs="0" xmlns:urn="http://www.charli.xyz/xsd/localization.xsd"/>
+      <xs:element type="urn:localizationType" name="localization" maxOccurs="unbounded" minOccurs="0" xmlns:urn="http://www.charli.xyz/xsd/localization.xsd"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required" />
+    <xs:attribute name="default-culture" type="xs:string" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="groupType">
+    <xs:sequence>
+      <xs:element type="urn:groupType" name="group" maxOccurs="unbounded" minOccurs="0" xmlns:urn="http://www.charli.xyz/xsd/localization.xsd"/>
+      <xs:element type="urn:localizationType" name="localization" maxOccurs="unbounded" minOccurs="0" xmlns:urn="http://www.charli.xyz/xsd/localization.xsd"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required" />
+  </xs:complexType>
+  
+  <xs:complexType name="localizationType">
+    <xs:sequence>
+      <xs:element type="urn:translationType" name="translation" maxOccurs="unbounded" minOccurs="1" xmlns:urn="http://www.charli.xyz/xsd/localization.xsd"/>
+    </xs:sequence>
+    <xs:attribute name="key" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="translationType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="culture" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  
+  
+</xs:schema>

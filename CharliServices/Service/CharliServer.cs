@@ -1,5 +1,16 @@
 ﻿using McpNetwork.Charli.Server.Constants;
 using McpNetwork.Charli.Server.Helpers;
+using McpNetwork.Charli.Server.Managers.Database;
+using McpNetwork.Charli.Server.Managers.Localization;
+using McpNetwork.Charli.Server.Managers.Logger;
+using McpNetwork.Charli.Server.Managers.MessageQueue;
+using McpNetwork.Charli.Server.Managers.Plugins;
+using McpNetwork.Charli.Server.Managers.PushNotification;
+using McpNetwork.Charli.Server.Managers.Scheduler;
+using McpNetwork.Charli.Server.Managers.Security;
+using McpNetwork.Charli.Server.Managers.Settings;
+using McpNetwork.Charli.Server.Managers.VoiceTool;
+using McpNetwork.Charli.Server.Managers.WebService;
 using McpNetwork.Charli.Server.Models;
 using McpNetwork.Charli.Server.Models.Enums;
 using McpNetwork.Charli.Server.Models.Interfaces;
@@ -78,7 +89,7 @@ namespace McpNetwork.Charli.Server.Service
                 });
 
                 this.VoiceToolsManager?.SetLanguage(this.SettingManager.DefaultCulture);
-                this.VoiceToolsManager?.Speak("Charli is now listening");
+                this.VoiceToolsManager?.Speak(LocalizationManager.GetLocalization("Charli-Common-Locale", "CharliServer/Actions", "CharliStarted"));
             }
 
         }
@@ -136,17 +147,17 @@ namespace McpNetwork.Charli.Server.Service
             var result = true;
             var settingsFile = Path.Combine(rootPath, "Settings.xml");
 
-            //this.services.AddSingleton(typeof(IMessageQueueManager), new MessageQueueManager());
-            //this.services.AddSingleton(typeof(IDatabaseManager), new DatabaseManager());
-            //this.services.AddSingleton(typeof(ILocalizationManager), new LocalizationManager());
-            //this.services.AddSingleton(typeof(ILoggerManager), new LoggerManager());
-            //this.services.AddSingleton(typeof(IPluginManager), new PluginManager());
-            //this.services.AddSingleton(typeof(IPushNotificationManager), new PushNotificationManager());
-            //this.services.AddSingleton(typeof(ISchedulerManager), new SchedulerManager());
-            //this.services.AddSingleton(typeof(ISecurityManager), new SecurityManager());
-            //this.services.AddSingleton(typeof(ISettingManager), new SettingManager());
-            //this.services.AddSingleton(typeof(IVoiceToolsManager), new VoiceToolsManager());
-            //this.services.AddSingleton(typeof(IWebServicesManager), new WebServicesManager());
+            this.services.AddSingleton(typeof(IMessageQueueManager), new MessageQueueManager());
+            this.services.AddSingleton(typeof(IDatabaseManager), new DatabaseManager());
+            this.services.AddSingleton(typeof(ILocalizationManager), new LocalizationManager());
+            this.services.AddSingleton(typeof(ILoggerManager), new LoggerManager());
+            this.services.AddSingleton(typeof(IPluginManager), new PluginManager());
+            this.services.AddSingleton(typeof(IPushNotificationManager), new PushNotificationManager());
+            this.services.AddSingleton(typeof(ISchedulerManager), new SchedulerManager());
+            this.services.AddSingleton(typeof(ISecurityManager), new SecurityManager());
+            this.services.AddSingleton(typeof(ISettingManager), new SettingManager());
+            this.services.AddSingleton(typeof(IVoiceToolsManager), new VoiceToolsManager());
+            this.services.AddSingleton(typeof(IWebServicesManager), new WebServicesManager());
 
             this.serviceProvider = this.services.BuildServiceProvider();
 

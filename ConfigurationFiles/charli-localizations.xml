@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<localizations xmlns="http://www.charli.xyz/xsd/localization.xsd" name="Charli-Common-Locale" default-culture="en-US">
+
+  <group name="Global">
+    <localization key="CharliServer">
+      <translation culture="fr-FR">Serveur Charli</translation>
+      <translation culture="en-US">Charli Server</translation>
+    </localization>
+  </group>
+
+  <group name="CharliServer">
+    <group name="Actions">
+      <localization key="Starting">
+        <translation culture="en-US">"Starting Charli's sub systems"</translation>
+        <translation culture="fr-FR">Démarrage des sous-systèmes de Charli</translation>
+      </localization>
+      <localization key="Stopping">
+        <translation culture="en-US">"Stopping Charli's sub systems"</translation>
+        <translation culture="fr-FR">Arrêt des sous-systèmes de Charli</translation>
+      </localization>
+      <localization key="Pausing">
+        <translation culture="en-US">"Pausing Charli's sub systems"</translation>
+        <translation culture="fr-FR">Mise en pause des sous-systèmes de Charli</translation>
+      </localization>
+      <localization key="Resuming">
+        <translation culture="en-US">"Resuming Charli's sub systems"</translation>
+        <translation culture="fr-FR">Reprise des sous-système de Charli</translation>
+      </localization>
+      <localization key="CharliStarted">
+        <translation culture="en-US">CharliServer has started</translation>
+        <translation culture="fr-FR">CharliServer a démarré</translation>
+      </localization>
+      <localization key="CharliStopping">
+        <translation culture="en-US">CharliServer is shutting down</translation>
+        <translation culture="fr-FR">CharliServer est en cours d'arret</translation>
+      </localization>
+      <localization key="CharliPausing">
+        <translation culture="en-US">CharliServer is pausing</translation>
+        <translation culture="fr-FR">CharliServer se met en pause</translation>
+      </localization>
+      <localization key="CharliResumed">
+        <translation culture="en-US">CharliServer is resumed</translation>
+        <translation culture="fr-FR">CharliServer s'est réveillé</translation>
+      </localization>
+    </group>
+    <group name="Titles">
+      <localization key="CharliStarted">
+        <translation culture="en-US">Charli started</translation>
+        <translation culture="fr-FR">Charli démarré</translation>
+      </localization>
+      <localization key="CharliStopping">
+        <translation culture="en-US">Charli stopping</translation>
+        <translation culture="fr-FR">Charli en cours d'arret</translation>
+      </localization>
+      <localization key="CharliPausing">
+        <translation culture="en-US">Charli pausing</translation>
+        <translation culture="fr-FR">Charli en pause</translation>
+      </localization>
+      <localization key="CharliResumed">
+        <translation culture="en-US">Charli resumed</translation>
+        <translation culture="fr-FR">Charli réveillé</translation>
+      </localization>
+    </group>
+    <group name="Managers">
+      <localization key="LoadingDefaultManager">
+        <translation culture="en-US">Loading default manager {0}</translation>
+        <translation culture="fr-FR">Chargement manager par défaut {0}</translation>
+      </localization>
+      <localization key="ErrorLoadingManager">
+        <translation culture="en-US">Error loading custom manager {0}</translation>
+        <translation culture="fr-FR">Erreur pendant le chargement du manager personalisé {0}</translation>
+      </localization>
+    </group>
+    <group name="PowerEvents">
+      <group name="Titles">
+        <localization key="BatteryLow">
+          <translation culture="en-US">Battery power is low</translation>
+          <translation culture="fr-FR">Batterie faible</translation>
+        </localization>
+        <localization key="PowerStatusChange">
+          <translation culture="en-US">Power status changed</translation>
+          <translation culture="fr-FR">Alimentation changée</translation>
+        </localization>
+        <localization key="QuerySuspend">
+          <translation culture="en-US">System suspension request</translation>
+          <translation culture="fr-FR">Demande de mise en veille du système</translation>
+        </localization>
+        <localization key="QuerySuspendFailed">
+          <translation culture="en-US">System suspension denied</translation>
+          <translation culture="fr-FR">Demande de mise en veille refusée</translation>
+        </localization>
+        <localization key="ResumeAutomatic">
+          <translation culture="en-US">System resumed</translation>
+          <translation culture="fr-FR">Reprise du système</translation>
+        </localization>
+        <localization key="ResumeCritical">
+          <translation culture="en-US">System resumed</translation>
+          <translation culture="fr-FR">Reprise du système</translation>
+        </localization>
+        <localization key="ResumeSuspend">
+          <translation culture="en-US">System resumed</translation>
+          <translation culture="fr-FR">Reprise du système</translation>
+        </localization>
+        <localization key="Suspend">
+          <translation culture="en-US">System supending</translation>
+          <translation culture="fr-FR">Mise en veille du système</translation>
+        </localization>
+      </group>
+      <group name="Messages">
+        <localization key="BatteryLow">
+          <translation culture="en-US">System indicates that batterie is low</translation>
+          <translation culture="fr-FR">Le système indique que le niveau de la batterie est faible</translation>
+        </localization>
+        <localization key="PowerStatusChange">
+          <translation culture="en-US">Ths power status has changed</translation>
+          <translation culture="fr-FR">L'état de l'alimentation a changé</translation>
+        </localization>
+        <localization key="QuerySuspend">
+          <translation culture="en-US">System is requesting permission to suspend the computer</translation>
+          <translation culture="fr-FR">Le système demande la permission de mettre en veille l'ordinateur</translation>
+        </localization>
+        <localization key="QuerySuspendFailed">
+          <translation culture="en-US">System request to suspend the computer has been denied</translation>
+          <translation culture="fr-FR">La demande du système pour mettre en veille l'ordinateur a été refusée</translation>
+        </localization>
+        <localization key="ResumeAutomatic">
+          <translation culture="en-US">The computer is returning to a resumed state</translation>
+          <translation culture="fr-FR">L'ordinateur retourne dans un état de reprise</translation>
+        </localization>
+        <localization key="ResumeCritical">
+          <translation culture="en-US">The computer is returning to a resumed state</translation>
+          <translation culture="fr-FR">L'ordinateur retourne dans un état de reprise</translation>
+        </localization>
+        <localization key="ResumeSuspend">
+          <translation culture="en-US">The computer is returning to a resumed state</translation>
+          <translation culture="fr-FR">L'ordinateur retourne dans un état de reprise</translation>
+        </localization>
+        <localization key="Suspend">
+          <translation culture="en-US">The computer is about to enter a suspended state</translation>
+          <translation culture="fr-FR">L'ordinateur va se mettre en veille</translation>
+        </localization>
+      </group>
+    </group>
+    <group name="ErrorMessages">
+      <localization key="StartManager">
+        <translation culture="en-US">Failed to start manager {0}.</translation>
+        <translation culture="en-US">Echec du démarrage du manager {0}.</translation>
+      </localization>
+      <localization key="StopManager">
+        <translation culture="en-US">"Failed to stop manager {0}."</translation>
+        <translation culture="fr-FR">Echec de l'arrêt du manager {0}.</translation>
+      </localization>
+      <localization key="PauseManager">
+        <translation culture="en-US">"Failed to pause manager {0}."</translation>
+        <translation culture="fr-FR">Echec de la mise en pause du manager {0}.</translation>
+      </localization>
+      <localization key="ResumeManager">
+        <translation culture="en-US">"Failed to resume manager {0}."</translation>
+        <translation culture="fr-FR">Echec de la reprise du manager {0}.</translation>
+      </localization>
+    </group>
+    <localization key="SystemMonitoringRequest">
+      <translation culture="en-US">System monitoring requested on {0}</translation>
+      <translation culture="fr-FR">Demande de surveillance du système le {0}</translation>
+    </localization>
+    <localization key="Started">
+      <translation culture="en-US">Starting Charli Server on {0}</translation>
+      <translation culture="fr-FR">Démarrage du Serveur Charli le {0}</translation>
+    </localization>
+    <localization key="LoadFailure">
+      <translation culture="en-US">Failed loading/initializing manager {0}. Charli will stop</translation>
+      <translation culture="fr-FR">Echec pendant le chargement/initialisation du manager {0}. Charli va s'arrêter</translation>
+    </localization>
+    <localization key="ReceivedCommand">
+      <translation culture="en-US">"Received command [{0}]"</translation>
+      <translation culture="fr-FR">Commande [{0}] reçue</translation>
+    </localization>
+  </group>
+  
+  <group name="LocalizationManager">
+    <group name="Messages">
+      <group name="Initialization">
+        <localization key="Initializing">
+          <translation culture="en-US">LocalizationManager is initializing</translation>
+          <translation culture="fr-FR">Initialisation de LocalizationManager</translation>
+        </localization>
+        <localization key="Initialized">
+          <translation culture="en-US">LocalizationManager initialized</translation>
+          <translation culture="fr-FR">LocalizationManager initialisé</translation>
+        </localization>
+      </group>
+      <localization key="LocaleNotfound">
+        <translation culture="en-US">Translation not found</translation>
+        <translation culture="fr-FR">Traduction non trouvée</translation>
+      </localization>
+    </group>
+  </group>
+  
+  <group name="PluginManager">
+    <group name="statuses">
+      <localization key="NotStarted">
+        <translation culture="fr-FR">Non démarré</translation>
+        <translation culture="en-US">Not Started</translation>
+      </localization>
+      <localization key="Unknown">
+        <translation culture="fr-FR">Inconnu</translation>
+        <translation culture="en-US">Unknown</translation>
+      </localization>
+      <localization key="Initializing">
+        <translation culture="fr-FR">En cours de d'initialisation</translation>
+        <translation culture="en-US">Initializing</translation>
+      </localization>
+      <localization key="Initialized">
+        <translation culture="fr-FR">Initialisé</translation>
+        <translation culture="en-US">Initialized</translation>
+      </localization>
+      <localization key="Starting">
+        <translation culture="fr-FR">En cours de démarrage</translation>
+        <translation culture="en-US">Starting</translation>
+      </localization>
+      <localization key="Started">
+        <translation culture="fr-FR">Démarré</translation>
+        <translation culture="en-US">Started</translation>
+      </localization>
+      <localization key="Pausing">
+        <translation culture="fr-FR">En cours de mide en veille</translation>
+        <translation culture="en-US">Pausing</translation>
+      </localization>
+      <localization key="Paused">
+        <translation culture="fr-FR">En pause</translation>
+        <translation culture="en-US">Paused</translation>
+      </localization>
+      <localization key="Resuming">
+        <translation culture="fr-FR">En cours de reveil</translation>
+        <translation culture="en-US">Resuming</translation>
+      </localization>
+      <localization key="Stopping">
+        <translation culture="fr-FR">En cours d'arrêt</translation>
+        <translation culture="en-US">Stopping</translation>
+      </localization>
+      <localization key="Stopped">
+        <translation culture="fr-FR">Arrété</translation>
+        <translation culture="en-US">Stopped</translation>
+      </localization>
+    </group>
+    <group name="Messages">
+      <localization key="Initializing">
+        <translation culture="en-US">PluginManager is initializing.</translation>
+        <translation culture="fr-FR">Initialisation PluginManager.</translation>
+      </localization>
+      <localization key="Initialized">
+        <translation culture="en-US">PluginManager initialized.</translation>
+        <translation culture="fr-FR">PluginManager initialisé.</translation>
+      </localization>
+      <localization key="InvalidSetting">
+        <translation culture="en-US">Setting PluginsFolder is missing or invalid</translation>
+        <translation culture="fr-FR">Configuration PluginsFolder inexitante ou invalide</translation>
+      </localization>
+      <localization key="PluginNotActivated">
+        <translation culture="en-US">Plugin [{0}] is not activated. Not started</translation>
+        <translation culture="fr-FR">Plugin [{0}] n'est pas activé. Il ne sera pas démarré</translation>
+      </localization>
+      <localization key="StartingPlugin">
+        <translation culture="en-US">Starting plugin [{0}]</translation>
+        <translation culture="fr-FR">Démarrage plugin [{0}]</translation>
+      </localization>
+      <localization key="StoppingPlugin">
+        <translation culture="en-US">Stopping plugin [{0}]</translation>
+        <translation culture="fr-FR">Arrêt plugin [{0}]</translation>
+      </localization>
+      <localization key="PluginNotStopped">
+        <translation culture="en-US">Plugin [{0}] does not stop in allocated time.</translation>
+        <translation culture="fr-FR">Le plugin [{0}] ne s'est pas arrêté dans le temps alloué.</translation>
+      </localization>
+      <localization key="PausingPlugin">
+        <translation culture="en-US">Pausing plugin [{0}]</translation>
+        <translation culture="fr-FR">Mise en pause plugin [{0}]</translation>
+      </localization>
+      <localization key="ResumingPlugin">
+        <translation culture="en-US">Resuming plugin [{0}]</translation>
+        <translation culture="fr-FR">Reprise plugin [{0}]</translation>
+      </localization>
+      <localization key="PluginNotRegistered">
+        <translation culture="en-US">Plugin {0} is not registered. Registering it.</translation>
+        <translation culture="fr-FR">Le plugin {0} n'est pas enregistré. Enregistrement.</translation>
+      </localization>
+      <localization key="ErrorLoadingDll">
+        <translation culture="en-US">Error loading dll {0}. Type is set to null</translation>
+        <translation culture="fr-FR">Erreur de chargement dll {0}. Type est à null</translation>
+      </localization>
+      <localization key="ErrorLoadingDllMessage">
+        <translation culture="en-US">Error loading dll {0}. Message: {1}</translation>
+        <translation culture="fr-FR">Erreur de chargement dll {0}. Message: {1}</translation>
+      </localization>
+      <localization key="PluginNotResponding">
+        <translation culture="en-US">Plugin [{0}] not responding to Status message</translation>
+        <translation culture="fr-FR">Plugin [{0}] ne réponds pas au message Status</translation>
+      </localization>
+    </group>
+  </group>
+
+  <group name="PowerManager">
+    <group name="Messages">
+      <group name="Initialization">
+        <localization key="Initializing">
+          <translation culture="en-US">PowerManager is initializing.</translation>
+          <translation culture="fr-FR">Initialisation PowerManager.</translation>
+        </localization>
+        <localization key="Initialized">
+          <translation culture="en-US">PowerManager initialized.</translation>
+          <translation culture="fr-FR">PowerManager initialisé.</translation>
+        </localization>
+      </group>
+      <group name="Events">
+        <localization key="CommLost">
+          <translation culture="en-US">Communications with UPS lost</translation>
+          <translation culture="fr-FR">Communications avec l'onduleur UPS perdue</translation>
+        </localization>
+        <localization key="OnBatt">
+          <translation culture="en-US">Running on UPS batteries</translation>
+          <translation culture="fr-FR">Fonctionnement sur batterie de l'onduleur</translation>
+        </localization>
+        <localization key="PowerFailure">
+          <translation culture="en-US">Power failure</translation>
+          <translation culture="fr-FR">Perte d'alimentation secteur</translation>
+        </localization>
+        <localization key="PowerRestore">
+          <translation culture="en-US">Power is back. UPS running on mains.</translation>
+          <translation culture="fr-FR">Alimentation secteur de retour.</translation>
+        </localization>
+      </group>
+    </group>
+  </group>
+
+  <group name="PushNotificationManager">
+    <group name="Messages">
+      <localization key="Initializing">
+        <translation culture="en-US">PushNotificationManager is initializing.</translation>
+        <translation culture="fr-FR">Initialisation PushNotificationManager.</translation>
+      </localization>
+      <localization key="Initialized">
+        <translation culture="en-US">PushNotificationManager initialized.</translation>
+        <translation culture="fr-FR">PushNotificationManager initialisé.</translation>
+      </localization>      
+    </group>
+  </group>
+  
+  <group name="CommandManager">
+    <group name="Messages">
+      <localization key="UnrecognizedCommand">
+        <translation culture="en-US">Unrecognized command [{0}]</translation>
+        <translation culture="fr-FR">Commande [{0}] non reconnue</translation>
+      </localization>
+      <localization key="DupplicatedCommand">
+        <translation culture="en-US">A command with name [{0}] already exists.</translation>
+        <translation culture="fr-FR">Il existe déjà une commande nommée [{0}].</translation>
+      </localization>
+      <localization key="Initializing">
+        <translation culture="en-US">CommandManager is initializing</translation>
+        <translation culture="fr-FR">Initialisation CommandManager</translation>
+      </localization>
+      <localization key="Initialized">
+        <translation culture="en-US">CommandManager initialized</translation>
+        <translation culture="fr-FR">CommandManager initialisé</translation>
+      </localization>
+    </group>
+  </group>
+
+  <group name="SpeechRecognitionManager">
+    <group name="Messages">
+      <localization key="Initializing">
+        <translation culture="en-US">SpeechRecognitionManager is initializing.</translation>
+        <translation culture="fr-FR">Initialisation SpeechRecognitionManager.</translation>
+      </localization>
+      <localization key="Initialized">
+        <translation culture="en-US">SpeechRecognitionManager initialized.</translation>
+        <translation culture="fr-FR">SpeechRecognitionManager initialisé.</translation>
+      </localization>
+    </group>
+  </group>
+
+  <group name="WebServicesManager">
+    <group name="Messages">
+      <localization key="Initializing">
+        <translation culture="en-US">WebServicesManager is initializing.</translation>
+        <translation culture="fr-FR">Initialisation WebServicesManager.</translation>
+      </localization>
+      <localization key="Initialized">
+        <translation culture="en-US">WebServicesManager initialized.</translation>
+        <translation culture="fr-FR">WebServicesManager initialisé.</translation>
+      </localization>
+      <localization key="Listening">
+        <translation culture="en-US">Web API Services listening on {0}</translation>
+        <translation culture="fr-FR">Service APIs Web à l'écoute à {0}</translation>
+      </localization>
+      <localization key="Stopped">
+        <translation culture="en-US">Web API Services stopped</translation>
+        <translation culture="fr-FR">Service APIs Web arrêtée</translation>
+      </localization>
+    </group>    
+  </group>
+
+  <group name="SecurityManager">
+    <group name="Messages">
+      <localization key="Initializing">
+        <translation culture="fr-FR">Initialisation SecurityManager.</translation>
+        <translation culture="en-US">SecurityManager is initialising.</translation>
+      </localization>
+      <localization key="Initialized">
+        <translation culture="en-US">SecurityManager initialized.</translation>
+        <translation culture="fr-FR">SecurityManager initialisé.</translation>
+      </localization>
+    </group>
+  </group>
+
+  <group name="SchedulerManager">
+   <group name="Messages">
+     <localization key="Initializing">
+       <translation culture="en-US">SchedulerManager is initialising.</translation>
+       <translation culture="fr-FR">Initialisation SchedulerManager.</translation>
+     </localization>
+     <localization key="Initialized">
+       <translation culture="en-US">SchedulerManager initialized.</translation>
+       <translation culture="fr-FR">SchedulerManager initialisé.</translation>
+     </localization>
+   </group>
+  </group>
+  
+</localizations>

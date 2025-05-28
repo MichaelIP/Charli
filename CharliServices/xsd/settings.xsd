@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+    targetNamespace="http://www.charli.xyz/xsd/settings.xsd"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified"
+    xmlns="http://www.charli.xyz/xsd/settings.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  
+  <xs:element name="settings" type="urn:settingsType" xmlns:urn="http://www.charli.xyz/xsd/settings.xsd" />
+
+  <xs:complexType name="settingsType">
+    <xs:sequence>
+      <xs:element type="urn:connectionStrings" name="connectionStrings" minOccurs="1" maxOccurs="1" xmlns:urn="http://www.charli.xyz/xsd/settings.xsd"/>
+      <xs:element type="urn:global" name="global" minOccurs="1" maxOccurs="1" xmlns:urn="http://www.charli.xyz/xsd/settings.xsd" />
+      <xs:element type="urn:settingGroups" name="settingGroup" minOccurs="0" maxOccurs="unbounded" xmlns:urn="http://www.charli.xyz/xsd/settings.xsd" />
+    </xs:sequence>
+    <xs:attribute type="urn:supportedVersions" name="version" use="required" xmlns:urn="http://www.charli.xyz/xsd/settings.xsd"/>
+  </xs:complexType>
+
+  <!-- Settings -->
+  <xs:complexType name="settingGroups">
+    <xs:sequence>
+      <xs:element type="urn:settings" name="setting" maxOccurs="unbounded" minOccurs="1" xmlns:urn="http://www.charli.xyz/xsd/settings.xsd" />
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name" use="required"/>
+  </xs:complexType>
+  
+  <xs:complexType name="settings">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="name" use="required"/>
+        <xs:attribute type="urn:settings-datatype" name="data-type" use="required" xmlns:urn="http://www.charli.xyz/xsd/settings.xsd"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <!-- Connection Strings -->
+  <xs:complexType name="connectionStrings">
+    <xs:sequence>
+      <xs:element type="urn:connectionString" name="connectionString" maxOccurs="unbounded" xmlns:urn="http://www.charli.xyz/xsd/settings.xsd"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="connectionString">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="name" use="required"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  
+  <!-- Global settings -->
+  <xs:complexType name="global">
+    <xs:sequence>
+      <xs:element name="locale" type="xs:string" />
+      <xs:element name="folders" type="urn:global-folders" xmlns:urn="http://www.charli.xyz/xsd/settings.xsd" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="global-folders">
+    <xs:sequence>
+      <xs:element name="application-data" type="xs:string" />
+      <xs:element name="plugins" type="xs:string" />
+      <xs:element name="locales" type="xs:string" />
+      <xs:element name="grammars" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Enums -->
+  <xs:simpleType name="settings-datatype">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="string" />
+      <xs:enumeration value="integer" />
+      <xs:enumeration value="float" />
+      <xs:enumeration value="datetime" />
+      <xs:enumeration value="boolean" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="managersList">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="LocalizationManager" />
+      <xs:enumeration value="PushNotificationManager" />
+      <xs:enumeration value="PowerManager" />
+      <xs:enumeration value="SpeechRecognitionManager" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="supportedVersions">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="1.0"/>
+      <xs:enumeration value="1.1"/>
+      <xs:enumeration value="1.2"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+</xs:schema>

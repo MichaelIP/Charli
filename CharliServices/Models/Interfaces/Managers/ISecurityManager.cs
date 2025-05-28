@@ -1,4 +1,5 @@
-﻿using McpNetwork.Charli.Server.Models.Security;
+﻿using McpNetwork.Charli.Server.Models.Enums;
+using McpNetwork.Charli.Server.Models.Security;
 using McpNetwork.Charli.Server.Models.WebServices;
 using System.Collections.ObjectModel;
 
@@ -18,6 +19,6 @@ namespace McpNetwork.Charli.Server.Models.Interfaces.Managers
 
         SecurityTokenModel GetToken(string token);
 
-        bool IsAuthorized(string right, string token);
+        ECheckTokenResult IsAuthorized(string right, string token);
     }
 }

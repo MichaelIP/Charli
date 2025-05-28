@@ -1,0 +1,75 @@
+<settings xmlns="https://charli.mcp-network.fr/xsd/settings.xsd" version="1.2">
+
+	<connectionStrings>
+		<connectionString name="MicroServiceEntities">D:\CharliDev\Databases\charliWebServices.db</connectionString>
+		<connectionString name="CharliConnection">D:\CharliDev\Databases\charli.db</connectionString>
+		<connectionString name="VideoMonitoringConnection">D:\CharliDev\Databases\VideoMonitoring.db</connectionString>
+	</connectionStrings>
+
+	<global>
+		<locale>fr-FR</locale>
+		<folders>
+			<application-data>D:\CharliDev\ApplicationData</application-data>
+			<plugins>D:\CharliDev\Plugins</plugins>
+			<locales>%ApplicationData%{PathSeparator}Locales</locales>
+			<grammars>%ApplicationData%{PathSeparator}Grammars</grammars>
+		</folders>
+	</global>
+
+	<settingGroup name="WebServicesManager">
+		<setting name="RestApi.Timeout.Seconds" data-type="integer">10</setting>
+		<setting name="Service.WebServer.SecuredPort" data-type="integer">2021</setting>
+		<setting name="Service.WebServer.UnSecuredPort" data-type="integer">2022</setting>
+		<setting name="Service.WebServer.CertificateName" data-type="string">D:\CharliDev\Certificates\charli.pfx</setting>
+		<setting name="Service.WebServer.CertificatePassword" data-type="string">GetANew1</setting>
+		<setting name="Service.WebServer.CertificateLocation" data-type="string">FromFile</setting>
+		<setting name="Service.WebServer.DisableChunkedResponse" data-type="boolean">true</setting>
+		<setting name="Service.Token.HeaderName" data-type="string">Authorization</setting>
+		<setting name="RazorEngine.Compile.EveryTime" data-type="boolean">false</setting>
+		<setting name="Service.WwwRoot.Folder" data-type="string">%ApplicationData%{PathSeparator}wwwRoot</setting>
+		<setting name="Service.Views.Folder" data-type="string">%ApplicationData%{PathSeparator}Views</setting>
+	</settingGroup>
+
+	<settingGroup name="SecurityManager">
+		<setting name="TokenLifeTime" data-type="integer">5</setting>
+		<setting name="KeepExpiredTokenDelay" data-type="integer">2</setting>
+	</settingGroup>
+
+	<settingGroup name="PushNotificationsManager">
+		<setting name="PushNotifications.GCM_Api_Key" data-type="string">AIzaSyCcKHmpsX51thfAKgooIypKA7YyDFWURKM</setting>
+		<setting name="PushNotifications.GCM_Sender_Id" data-type="string">500159943913</setting>
+		<setting name="PushNotifications.APNS_Certificate_ThumPrint" data-type="string">6256AF82F3DE4D1EC32AE69537F65404E175C67B</setting>
+		<setting name="PushNotificiations.APNS_Certificate_Password" data-type="string">YMy7cUsg</setting>
+		<setting name="PushNotifications.APNS_Use_Sandbox" data-type="boolean">true</setting>
+		<setting name="PushNotification.Project" data-type="string">charli-mobile</setting>
+		<setting name="PushNotification.CredentialFile" data-type="string">%ApplicationData%{PathSeparator}charli-mobile-firebase.json</setting>
+	</settingGroup>
+
+	<settingGroup name="PowerManager">
+		<setting name="EnablePowerWatch" data-type="boolean">true</setting>
+		<setting name="ApcUps.Events.File" data-type="string">C:\Program Files\apcupsd\etc\apcupsd\apcupsd.events</setting>
+	</settingGroup>
+
+	<settingGroup name="VideoMonitoring">
+		<setting name="WebServices.Events.MaxEntries" data-type="integer">100</setting>
+		<setting name="Camera.RestartAfterNbEmptyFrames" data-type="integer">3</setting>
+		<setting name="MotionDetection.DetectionDurationSeconds" data-type="integer">10</setting>
+		<setting name="Writer.TempStreamLifeTime" data-type="integer">20</setting>
+		<setting name="Writer.RecordMotionDetectionSeconds" data-type="integer">30</setting>
+		<setting name="Writer.SaveFrameMaxRetries" data-type="integer">5</setting>
+		<setting name="Notification.MinDelayBetweenResend" data-type="integer">1000</setting>
+		<setting name="Video.TempFolder" data-type="string">%ApplicationData%{PathSeparator}cameraPlugin</setting>
+		<setting name="Video.OutputFolder" data-type="string">%ApplicationData%{PathSeparator}cameraPlugin{PathSeparator}Saved{PathSeparator}MotionDetection</setting>
+	</settingGroup>
+
+	<settingGroup name="VoiceManager">
+		<setting name="PicoVoice.AccessKey" data-type="string">/DtMyhXRlnWKVfPN3ALokXh9LbwLkPDmR/jJ3TGA0jEmqpx5/XApcg==</setting>
+		<setting name="VoiceGender" data-type="string">female</setting>
+	</settingGroup>
+
+	<!-- Following values are just for demo... -->
+	<settingGroup name="demo">
+		<setting name="test" data-type="string" >%ApplicationData%{PathSeparator}%Logs%</setting>
+	</settingGroup>
+
+</settings>

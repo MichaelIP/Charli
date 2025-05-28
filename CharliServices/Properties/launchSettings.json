@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CharliServices": {
+      "commandName": "Project",
+      "commandLineArgs": "--root D:\\CharliDev\\"
+    }
+  }
+}
