@@ -47,8 +47,15 @@ namespace McpNetwork.Charli.Managers.DatabaseManager.DataAccessLayers
                     using (var dbContext = new CharliEntities(this.dbPath))
                     {
 
-                        dbContext.Plugins.Add(plugin);
-                        dbContext.SaveChanges();
+                        var pluginExist = dbContext.Plugins
+                            .Where(x => x.Name == plugin.Name)
+                            .Any(x => x.Version == plugin.Version);
+
+                        if (!pluginExist)
+                        {
+                            dbContext.Plugins.Add(plugin);
+                            dbContext.SaveChanges();
+                        }
                     }
                 }
                 else
@@ -78,6 +85,7 @@ namespace McpNetwork.Charli.Managers.DatabaseManager.DataAccessLayers
                 {
                     var pluginVersion = version.ToString(3);
                     var plugin = dbContext.Plugins
+                        .Where(x => x.Version != null)
                         .Where(x => x.Version.StartsWith(pluginVersion))
                         .FirstOrDefault(p => p.Name == pluginName);
                     if (plugin != null)

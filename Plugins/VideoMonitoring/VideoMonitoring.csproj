@@ -6,15 +6,14 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<RootNamespace>McpNetwork.Charli.Plugins.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
-		<FileVersion>1.0.0</FileVersion>
-		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<FileVersion>3.0.0</FileVersion>
+		<AssemblyVersion>3.0.0</AssemblyVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
 	  <PackageReference Include="McpNetwork.WinNuxService" Version="8.1.0" />
 	  <PackageReference Include="MQTTnet" Version="4.3.7.1207" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-	  <PackageReference Include="System.Text.Json" Version="8.0.5" />
 	</ItemGroup>
 
 	<ItemGroup>

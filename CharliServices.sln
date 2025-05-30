@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoPlugin", "Plugins\DemoP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Charli.Environment", "Charli.Environment\Charli.Environment.csproj", "{681940AC-4639-A659-A695-66601109DCE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoMonitoring", "Plugins\VideoMonitoring\VideoMonitoring.csproj", "{49EA05EA-F1D5-47CF-B144-1AA43B276134}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,12 +38,17 @@ Global
 		{681940AC-4639-A659-A695-66601109DCE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{681940AC-4639-A659-A695-66601109DCE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{681940AC-4639-A659-A695-66601109DCE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49EA05EA-F1D5-47CF-B144-1AA43B276134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49EA05EA-F1D5-47CF-B144-1AA43B276134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49EA05EA-F1D5-47CF-B144-1AA43B276134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49EA05EA-F1D5-47CF-B144-1AA43B276134}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{16A185C0-DC32-4BC5-8130-D540207C7C88} = {F48007CA-FEA7-47F0-9156-0D52C4756D15}
+		{49EA05EA-F1D5-47CF-B144-1AA43B276134} = {F48007CA-FEA7-47F0-9156-0D52C4756D15}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {41452FF3-B370-45B8-B498-23EF24A495D3}

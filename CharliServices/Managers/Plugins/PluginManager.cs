@@ -132,7 +132,8 @@ namespace McpNetwork.Charli.Server.Managers.Plugins
             repo.RegisterPlugin(new Plugin
             {
                 Name = pluginName,
-                Version = version.ToString(4),
+                FileName = pluginName,
+                Version = version.ToString(3),
                 CreationDate = DateTime.Now,
                 UpdateDate = DateTime.Now,
                 Active = false,
