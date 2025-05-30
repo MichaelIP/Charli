@@ -130,7 +130,9 @@ namespace McpNetwork.Charli.Plugins.DemoPlugin
         }
         private Task MqttClient_ApplicationMessageReceivedAsync(MqttApplicationMessageReceivedEventArgs arg)
         {
-            Debug.WriteLine(string.Format("Received message on topic [{0}] :", arg.ApplicationMessage.Topic);
+            var payload = arg.ApplicationMessage.ConvertPayloadToString();
+            Debug.WriteLine(string.Format("Received message from [{1}] on topic [{0}] :", arg.ApplicationMessage.Topic, arg.ClientId));
+            Debug.WriteLine(string.Format("Message [{0}] :", payload));
             return Task.CompletedTask;
         }
 
@@ -141,12 +143,14 @@ namespace McpNetwork.Charli.Plugins.DemoPlugin
             mqttClient?.PublishAsync(new MqttApplicationMessage
             {
                 Topic = demoPluginTopic,
-                PayloadSegment = new ArraySegment<byte>(jsonBytes)
+                PayloadSegment = new ArraySegment<byte>(jsonBytes),
+                PayloadFormatIndicator = MQTTnet.Protocol.MqttPayloadFormatIndicator.CharacterData
             });
             mqttClient?.PublishAsync(new MqttApplicationMessage
             {
                 Topic = invalidTopic,
-                PayloadSegment = new ArraySegment<byte>(jsonBytes)
+                PayloadSegment = new ArraySegment<byte>(jsonBytes),
+                PayloadFormatIndicator = MQTTnet.Protocol.MqttPayloadFormatIndicator.CharacterData
             });
         }
 
