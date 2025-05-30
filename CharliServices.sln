@@ -5,14 +5,18 @@ VisualStudioVersion = 17.14.36109.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharliServices", "CharliServices\CharliServices.csproj", "{D0A27CE3-FC07-4AFE-AA58-A622EB08CDEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Charli.Environment", "Charli.Environment\Charli.Environment.csproj", "{7928AF48-8FF5-4AF8-897E-009AF2492445}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConfigurationFiles", "ConfigurationFiles", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 	ProjectSection(SolutionItems) = preProject
 		ConfigurationFiles\charli-localizations.xml = ConfigurationFiles\charli-localizations.xml
 		ConfigurationFiles\log4net.config = ConfigurationFiles\log4net.config
 		ConfigurationFiles\Settings.xml = ConfigurationFiles\Settings.xml
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{F48007CA-FEA7-47F0-9156-0D52C4756D15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoPlugin", "Plugins\DemoPlugin\DemoPlugin.csproj", "{16A185C0-DC32-4BC5-8130-D540207C7C88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Charli.Environment", "Charli.Environment\Charli.Environment.csproj", "{681940AC-4639-A659-A695-66601109DCE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,13 +28,20 @@ Global
 		{D0A27CE3-FC07-4AFE-AA58-A622EB08CDEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0A27CE3-FC07-4AFE-AA58-A622EB08CDEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0A27CE3-FC07-4AFE-AA58-A622EB08CDEB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7928AF48-8FF5-4AF8-897E-009AF2492445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7928AF48-8FF5-4AF8-897E-009AF2492445}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7928AF48-8FF5-4AF8-897E-009AF2492445}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7928AF48-8FF5-4AF8-897E-009AF2492445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16A185C0-DC32-4BC5-8130-D540207C7C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16A185C0-DC32-4BC5-8130-D540207C7C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16A185C0-DC32-4BC5-8130-D540207C7C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16A185C0-DC32-4BC5-8130-D540207C7C88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{681940AC-4639-A659-A695-66601109DCE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{681940AC-4639-A659-A695-66601109DCE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{681940AC-4639-A659-A695-66601109DCE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{681940AC-4639-A659-A695-66601109DCE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{16A185C0-DC32-4BC5-8130-D540207C7C88} = {F48007CA-FEA7-47F0-9156-0D52C4756D15}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {41452FF3-B370-45B8-B498-23EF24A495D3}
